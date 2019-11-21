@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Selectable - Default functionality</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link rel="stylesheet" href="css/ststyle.css">
+</head>
+<body>
+<img src="images/AirIndiaastaralliance.png"><br>
+<br>
+<!-- Navigation -->
+
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header"></div>
+  <div class="nav-btn">
+    <label for="nav-check"><span></span><span></span><span></span></label>
+  </div>
+  <div class="nav-links"><a href="//github.io/jo_geek" target="_blank" class="home">Home</a><a href="//github.io/jo_geek" target="_blank">Book Flight</a><a href="http://stackoverflow.com/users/4084003/" target="_blank" class="editbooking">Edit Booking</a><a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">Check-In</a><a href="https://codepen.io/jo_Geek/" target="_blank">Baggage</a><a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">About Us</a></div>
+</div>
+<br>
+<div>
+  <ul id="selectable">
+    <li class="ui-widget-content">Check-In Options</li>
+    <li class="ui-widget-content">Fare Rules</li>
+    <li class="ui-widget-content">Add On Services</li>
+    <li class="ui-widget-content">On Board Services</li>
+    <li class="ui-widget-content">Travel Certificate</li>
+    <li class="ui-widget-content">Refund Details</li>
+    <li onclick="location.href='Ticket5.html';" title="Cancellation">Cancellation</a></li>
+  </ul>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<script src="js/jqueryretrieveoptions.js"></script> 
+<script>
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  </script>
+</body>
+</html>

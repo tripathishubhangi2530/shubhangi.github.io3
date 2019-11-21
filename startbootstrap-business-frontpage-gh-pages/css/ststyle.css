@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn {
+ background :#CC0200 color: #CC0200;
+}
+.btn {
+    margin-left: 500px;
+}
+{
+ border-radius: 25px;
+ border: 2px solid #CC0200;
+ padding: 40px;
+ width: 200px;
+ height: 120px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #CC0200;
+    position: relative;
+}
+.home{
+	font-weight: bold;
+	color: white !important; 
+}
+.nav > .nav-header {
+    display: inline;
+}
+.editbooking {
+    color: white !important;
+	
+}
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 20px 10px 10px 10px;
+}
+.nav > .nav-btn {
+    display: none;
+}
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    z-index: 1;
+}
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    z-index: 1;
+}
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+.nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+}
+.nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+}
+.nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #CC0200;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+}
+.nav > .nav-links > a {
+    display: block;
+    width: 100%;
+}
+.nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+}
+/* ===========================
+   ====== Search Box ====== 
+   =========================== */
+
+.search {
+    border: 2px solid #CC0200;
+    overflow: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.search input[type="text"] {
+    border: 0px;
+    width: 70%;
+    padding: 2px 10px;
+}
+.search input[type="text"]:focus {
+    outline: 0;
+}
+.search input[type="submit"] {
+    border: 0px;
+    background: none;
+    background-color: #CC0200;
+    color: #fff;
+    float: right;
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor: pointer;
+}
+
+/* ===========================
+   ====== Medua Query for Search Box ====== 
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px) { {
+}
+.search {
+    width: 95%;
+    margin: 0 auto;
+}
+}
+.ticket {
+    padding-top: 50px;
+}
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #CC0200;
+    padding: 10px;
+    width: 900px;
+    height: 250px;
+}
+. .nav-link {
+ color: white;
+}
+<style> body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #CC0200;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: #CC0200;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #CC0200;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+img.passenger {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+/* Close button on hover */
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+ @-webkit-keyframes animatezoom {
+ from {
+-webkit-transform: scale(0)
+}
+ to {
+-webkit-transform: scale(1)
+}
+}
+ @keyframes animatezoom {
+ from {
+transform: scale(0)
+}
+ to {
+transform: scale(1)
+}
+}
+/* retrieving options (x) */
+<style>  #feedback {
+font-size: 1.4em;
+}
+#selectable .ui-selecting {
+    background: #CC0200;
+}
+#selectable .ui-selected {
+    background: #CC0200;
+    color: white;
+}
+#selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+#selectable li {
+    margin: 1px;
+    padding: 1.2em;
+    font-size: 1.1em;
+    height: 18px;
+}
+ </style>  
+
+.editbookhead {
+ padding-left:120px;
+}
+
+
+.navbar-brand {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+a.button1{
+ display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #FFFFFF;
+ margin:0 0.3em 0.3em 0;
+ border-radius:0.12em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
+}
+a.button1:hover{
+ color:#000000;
+ background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+ a.button1{
+  display:block;
+  margin:0.4em auto;
+ }
+}
+
+.retrieve {
+	background-color: red;
+	width: 80%;
+	font color: white;
+	font font-weight: 100;
+		
+}
